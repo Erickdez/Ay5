@@ -21,30 +21,16 @@ function preLoadUsers() {
     localStorage.setItem("lUserArray", JSON.stringify(userArray))
 }
 
-function preLoadAddResults() {
+function preLoadSales() {
 
-    var addResultArray = [
-        { user: "rod", num1: 1, num2: 2, result: 1 },
-        { user: "rod", num1: 1, num2: 2, result: 2 },
-        { user: "ted", num1: 1, num2: 2, result: 3 },
-        { user: "ted", num1: 1, num2: 2, result: 4 },
-        { user: "rod", num1: 1, num2: 2, result: 5 },
-        { user: "rod", num1: 1, num2: 2, result: 6 },
-        { user: "ted", num1: 1, num2: 2, result: 7 },
-        { user: "ted", num1: 1, num2: 2, result: 8 },
-        { user: "rod", num1: 1, num2: 2, result: 9 },
-        { user: "rod", num1: 1, num2: 2, result: 10 },
-        { user: "ted", num1: 1, num2: 2, result: 11 },
-        { user: "ted", num1: 1, num2: 2, result: 12 },
-        { user: "rod", num1: 1, num2: 2, result: 13 },
-        { user: "rod", num1: 1, num2: 2, result: 14 },
-        { user: "ted", num1: 1, num2: 2, result: 15 },
-        { user: "ted", num1: 1, num2: 2, result: 16 }
+    var addSalesArray = [
+        { user: "rod", producto: "Chiky", precio: 0.25, cantidad: 3, total: 0.75  },
+
     ]
 
-    localStorage.setItem("lAddResultArray", JSON.stringify(addResultArray))
+    localStorage.setItem("lSalesArray", JSON.stringify(addSalesArray))
 }
 
 
 preLoadUsers()
-preLoadAddResults()
+preLoadSales()

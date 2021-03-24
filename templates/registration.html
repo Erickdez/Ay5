@@ -14,19 +14,19 @@
 
     <div class="form-container">
         <h1>Registration</h1>
-        <label for="user_reg">Full Name</label>
+        <label for="name_reg">Full Name</label>
         <input type="text" name="name" id="name_reg" placeholder="Name">
         <label for="user_reg">Username</label>
         <input type="text" name="user" id="user_reg" placeholder="Username">
         <label for="passw_reg">Password</label>
         <input type="password" name="passw" id="passw_reg" placeholder="Password">
-        <button onclick="registerNewUser()">register</button>
+        <button onclick="registerNewUser()">Register</button>
     </div>
 
     <br>
 
     <div>
-        <a href="{{url_for('login')}}">go to login</a>
+        <a href="{{url_for('login')}}">Have an account?</a>
     </div>
 
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
