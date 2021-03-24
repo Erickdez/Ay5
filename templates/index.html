@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <h1>landing</h1>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores adipisci magnam dicta, assumenda nulla
+            laudantium tenetur quas cupiditate iste officia, perferendis eveniet fugit architecto aut aliquid. A, quod
+            reiciendis!
+            Ab rem voluptatibus cum dolor molestiae atque ipsa quos ipsum ea tempora ipsam assumenda earum, veniam,
+            voluptate in! Dolor, corporis amet! Itaque, deleniti iste harum at nulla voluptatem doloremque deserunt!</p>
+
+    </div>
+
+    <div class="container" id="login">
+        <a href="{{url_for('login')}}">login</a>
+        <img src="{{url_for('static', filename='images/avatar.svg')}}" width="180" height="180" alt="">
+    </div>
+
+    <script src="{{url_for('static', filename='pre_load.js')}}"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>
