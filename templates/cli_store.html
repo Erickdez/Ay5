@@ -1,21 +1,25 @@
 <div>
-    <h1>addition client</h1>
+    <h1>Compra</h1>
     <br>
 
-    <label for="number1">number1</label>
-    <input type="number" name="number1" id="number1" placeholder="insert number one...">
+    <label for="producto">Producto</label>
+    <input type="text" name="producto" id="producto" placeholder="Nombre Producto">
     <br><br>
-    <label for="number2">number2</label>
-    <input type="number" name="number2" id="number2" placeholder="insert number two...">
+    <label for="precio">Precio</label>
+    <input type="number" name="precio" id="precio" placeholder="Precio">
     <br><br>
-    <button onclick="add()">add</button>
+    <label for="cantidad">Cantidad</label>
+    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad">
+    <br><br>
+    <button onclick="addSale()">add</button>
     <br>
     <br>
     <table id="userTableClient" style="width:50%" border="1">
         <tr>
-            <th>number1</th>
-            <th>number2</th>
-            <th>result</th>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
         </tr>
     </table>
 </div>

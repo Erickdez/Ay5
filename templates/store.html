@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
 </head>
 
 <body>
-    <h1>dashboard</h1>
+    <h1>Tienda de Carlitos</h1>
     <br>
 
     <div>
@@ -18,15 +18,15 @@
     </div>
 
     <div>
-        <a onclick="logout()" href="">logout</a>
+        <a onclick="logout()" href="">Log Out</a>
     </div>
 
     <div class="main">
 
         <div class="main__section" id="main_section">
-            <div style="display:block" id="client" name="w3includes" w3-include-html="http://localhost:5000/add_cli">
+            <div style="display:block" id="client" name="w3includes" w3-include-html="http://localhost:5000/cli_store">
             </div>
-            <div style="display:block" id="admin" name="w3includes" w3-include-html="http://localhost:5000/add_adm">
+            <div style="display:block" id="admin" name="w3includes" w3-include-html="http://localhost:5000/adm_store">
             </div>
         </div>
 
@@ -34,7 +34,7 @@
 
 
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>
