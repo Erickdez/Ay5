@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Tienda de Carlitos</h1>
+    <h1 class="title">Tienda de Carlitos</h1>
 
     <div class="form-container">
         <h1>Registration</h1>
@@ -21,13 +21,10 @@
         <label for="passw_reg">Password</label>
         <input type="password" name="passw" id="passw_reg" placeholder="Password">
         <button onclick="registerNewUser()">Register</button>
-    </div>
 
-    <br>
-
-    <div>
         <a href="{{url_for('login')}}">Have an account?</a>
     </div>
+
 
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
