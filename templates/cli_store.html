@@ -1,0 +1,25 @@
+<div>
+    <h1>Compra</h1>
+    <br>
+
+    <label for="producto">Producto</label>
+    <input type="text" name="producto" id="producto" placeholder="Nombre Producto">
+    <br><br>
+    <label for="precio">Precio</label>
+    <input type="number" name="precio" id="precio" placeholder="Precio" step="0.01">
+    <br><br>
+    <label for="cantidad">Cantidad</label>
+    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad">
+    <br><br>
+    <button onclick="addSale()">Comprar</button>
+    <br>
+    <br>
+    <table id="userTableClient" style="width:50%" border="1">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+        </tr>
+    </table>
+</div>

@@ -21,19 +21,19 @@ def register():
     return render_template("registration.html")
 
 
-@app.route("/dashboard")
+@app.route("/store")
 def dashboard():
-    return render_template("dashboard.html")
+    return render_template("store.html")
 
 
-@app.route("/add_cli")
+@app.route("/cli_store")
 def addcli():
-    return render_template("add_cli.html")
+    return render_template("cli_store.html")
 
 
-@app.route("/add_adm")
+@app.route("/adm_store")
 def addadm():
-    return render_template("add_adm.html")
+    return render_template("adm_store.html")
 
 
 if __name__ == "__main__":

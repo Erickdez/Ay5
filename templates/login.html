@@ -6,29 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
 </head>
 
 <body>
-    <h1>Login form</h1>
-    <hr>
+    <h1 class="title">Tienda de Carlitos</h1>
 
-    <div class="container">
-        <h2>login form</h2>
-        <label for="user">user</label>
-        <input type="text" name="user" id="user" placeholder="user...">
-        <label for="passw">password</label>
-        <input type="text" name="passw" id="passw" placeholder="password...">
-        <button onclick="checkLogin()">log in</button>
+    <div class="form-container">
+        <h1>Log In</h1>
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user" placeholder="Username">
+        <label for="passw">Password</label>
+        <input type="password" name="passw" id="passw" placeholder="Password">
+        <button onclick="checkLogin()">Log In</button>
+
+        <a href="{{url_for('register')}}">Don't have an account?</a>
     </div>
 
-    <br>
-    <hr>
-    <div>
-        <a href="{{url_for('register')}}">go to registration</a>
-    </div>
-
-    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>
